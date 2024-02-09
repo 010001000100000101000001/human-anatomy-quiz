@@ -15,7 +15,10 @@ def new_game():
         {"question": "Which part of the human body produces insulin?", "options": ["a) Pancreas", "b) Liver", "c) Kidney", "d) Heart"], "answer": "a"},
         {"question": "What is the largest bone in the human body?", "options": ["a) Femur", "b) Tibia", "c) Humerus", "d) Radius"], "answer": "a"},
         {"question": "How many bones are in the human body?", "options": ["a) 206", "b) 208", "c) 210", "d) 212"], "answer": "a"},
-        {"question": "What is the study of muscles called?", "options": ["a) Cardiology", "b) Neurology", "c) Myology", "d) Dermatology"], "answer": "c"}
+        {"question": "What is the study of muscles called?", "options": ["a) Cardiology", "b) Neurology", "c) Myology", "d) Dermatology"], "answer": "c"},
+        {"question": "Which layer of skin is the outermost?", "options": ["a) Dermis", "b) Epidermis", "c) Hypodermis", "d) Subcutis"], "answer": "b"},
+        {"question": "Where are red blood cells produced?", "options": ["a) Heart", "b) Bone marrow", "c) Liver", "d) Spleen"], "answer": "b"},
+        {"question": "Which layer of skin is the outermost?", "options": ["a) Dermis", "b) Epidermis", "c) Hypodermis", "d) Subcutis"], "answer": "b"}
     ]
     
     score = 0
@@ -54,6 +57,3 @@ def menu():
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
-
-if __name__ == "__main__":
-    menu()
