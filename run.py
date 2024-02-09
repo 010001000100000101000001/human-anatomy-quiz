@@ -20,6 +20,18 @@ def new_game():
     
     score = 0
 
+    for q in questions:
+        print("\n" + q["question"])
+        for option in q["options"]:
+            print(option)
+        answer = input("Enter your answer (a, b, c, d):\n").lower()
+
+        if answer == q["answer"]:
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The correct answer was " + q["answer"] + ".")
+
 def menu():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')  # Clears the screen
