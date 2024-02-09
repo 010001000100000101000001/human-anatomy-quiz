@@ -18,7 +18,6 @@ def new_game():
         {"question": "What is the study of muscles called?", "options": ["a) Cardiology", "b) Neurology", "c) Myology", "d) Dermatology"], "answer": "c"},
         {"question": "Which layer of skin is the outermost?", "options": ["a) Dermis", "b) Epidermis", "c) Hypodermis", "d) Subcutis"], "answer": "b"},
         {"question": "Where are red blood cells produced?", "options": ["a) Heart", "b) Bone marrow", "c) Liver", "d) Spleen"], "answer": "b"},
-        {"question": "Which layer of skin is the outermost?", "options": ["a) Dermis", "b) Epidermis", "c) Hypodermis", "d) Subcutis"], "answer": "b"}
     ]
     
     score = 0
@@ -36,11 +35,10 @@ def new_game():
             print("Incorrect. The correct answer was " + q["answer"] + ".")
 
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
-    input("Press Enter to return to the menu..."
+    input("Press Enter to return to the menu...")
 
 def menu():
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')  # Clears the screen
         print("\nWelcome to the Human Anatomy Quiz Game!")
         print("1. Play Game")
         print("2. Instructions")
@@ -57,3 +55,5 @@ def menu():
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
+
+menu()
