@@ -32,6 +32,9 @@ def new_game():
         else:
             print("Incorrect. The correct answer was " + q["answer"] + ".")
 
+    print(f"\nGame Over! Your score was {score}/{len(questions)}")
+    input("Press Enter to return to the menu..."
+
 def menu():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')  # Clears the screen
@@ -51,3 +54,6 @@ def menu():
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
+
+if __name__ == "__main__":
+    menu()
