@@ -2,6 +2,13 @@ import os
 import sys
 import time
 
+def display_instructions():
+    print("\nInstructions:")
+    print("Welcome to the Human Anatomy Quiz!")
+    print("You will be given a series of questions to test your knowledge.")
+    print("Please answer by typing the letter corresponding to your answer (a, b, c, or d), then press Enter.")
+    print("Good luck!\n")
+
 def menu():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')  # Clears the screen
