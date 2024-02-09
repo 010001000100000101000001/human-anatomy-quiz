@@ -9,6 +9,17 @@ def display_instructions():
     print("Please answer by typing the letter corresponding to your answer (a, b, c, or d), then press Enter.")
     print("Good luck!\n")
 
+def new_game():
+    questions = [
+        {"question": "What is the largest organ of the human body?", "options": ["a) Heart", "b) Skin", "c) Liver", "d) Kidney"], "answer": "b"},
+        {"question": "Which part of the human body produces insulin?", "options": ["a) Pancreas", "b) Liver", "c) Kidney", "d) Heart"], "answer": "a"},
+        {"question": "What is the largest bone in the human body?", "options": ["a) Femur", "b) Tibia", "c) Humerus", "d) Radius"], "answer": "a"},
+        {"question": "How many bones are in the human body?", "options": ["a) 206", "b) 208", "c) 210", "d) 212"], "answer": "a"},
+        {"question": "What is the study of muscles called?", "options": ["a) Cardiology", "b) Neurology", "c) Myology", "d) Dermatology"], "answer": "c"}
+    ]
+    
+    score = 0
+
 def menu():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')  # Clears the screen
