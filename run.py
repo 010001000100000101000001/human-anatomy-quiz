@@ -14,41 +14,61 @@ def display_instructions():
 
 def new_game():
     questions = [
-        {
+           {
             "question": "What is the largest organ of the human body?",
             "options": ["a) Heart", "b) Skin", "c) Liver", "d) Kidney"],
             "answer": "b"
-        },
-        {
+           },
+           {
             "question": "Which part of the human body produces insulin?",
             "options": ["a) Pancreas", "b) Liver", "c) Kidney", "d) Heart"],
             "answer": "a"
-        },
-        {
+           },
+           {
             "question": "What is the largest bone in the human body?",
             "options": ["a) Femur", "b) Tibia", "c) Humerus", "d) Radius"],
             "answer": "a"
-        },
-        {
+           },
+           {
             "question": "How many bones are in the human body?",
             "options": ["a) 206", "b) 208", "c) 210", "d) 212"],
             "answer": "a"
-        },
-        {
+           },
+           {
             "question": "What is the study of muscles called?", "options":
             ["a) Zoology", "b) Topology", "c) Myology", "d) Xylology"],
             "answer": "c"
-        },
-        {
+           },
+           {
             "question": "Which layer of skin is the outermost?", "options":
             ["a) Dermis", "b) Epidermis", "c) Hypodermis", "d) Subcutis"],
             "answer": "b"
-        },
-        {
+           },
+           {
             "question": "Where are red blood cells produced?",
             "options": ["a) Heart", "b) Bone marrow", "c) Liver", "d) Spleen"],
             "answer": "b"
-        },
+           },
+           {
+            "question": "Where is the patella located?",
+            "options": ["a) Arm", "b) Leg", "c) Knee", "d) Foot"],
+            "answer": "c"
+           },
+           {
+            "question": "Which of these is a part of the small intestine?",
+            "options": ["a) Duodenum", "b) Colon", "c) Cecum", "d) Appendix"],
+            "answer": "a"
+           },
+           {
+            "question": "What brain region is key for decision-making?",
+            "options": [
+             "a) Cerebellum",
+             "b) Medulla oblongata",
+             "c) Frontal lobe",
+             "d) Temporal lobe"
+            ],
+            "answer": "c"
+           }
     ]
 
     score = 0
