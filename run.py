@@ -82,8 +82,8 @@ def new_game():
     if answer == q["answer"]:
         print("Correct!")
         score += 1
-            else:
-            print("Incorrect. The correct answer was " + q["answer"] + ".")
+    else:
+        print("Incorrect. The correct answer was " + q["answer"] + ".")
 
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
     input("Press Enter to return to the menu...")
