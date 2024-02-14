@@ -2,13 +2,33 @@
 
 ## Introduction
 The Human Anatomy Quiz is a simple, interactive Python terminal game designed to test a users knowledge of human anatomy.
-It is aimed at individuals of all ages who are interested in learning about the human body in a fun and engaging way.
+It is aimed at individuals of all ages who are interested in learning about the human body in a fun and engaging way. The game can be useful to students learning Human Anatomy who want to test their knowledge.
+
+
 #### How to Play
 - Answer a series of multiple-choice questions by typing the letter corresponding to your answer (a, b, c, or d), and then press Enter.
 - After each question, the user will receive immediate feedback. If the user gets the answer right, the game will congratulate you. If the user gets it wrong, the game will provide the correct answer.
 - The users score will be tallied as the user progresses through the quiz.
 
 
+#### Existing Features
+
+##### Welcome message 
+The player is greeted with a welcome message and a Menu with a list of options.
+
+##### Input validation
+- Players' responses to quiz questions are validated to ensure they select from the provided multiple-choice options (a, b, c, or d).
+
+#####  Feedback to the User
+Upon answering a question, players receive immediate feedback:
+- A correct answer results in a congratulatory message.
+- An incorrect answer lets the user know it was incorrect and provides them with the correct answer helping to educate them.
+
+##### End of Game
+Completing the quiz presents the user with a Game Over message followed by their score out of 10.
+
+##### Future Features
+Expand the number of questions.
 
 
 ## Deployment Guide
