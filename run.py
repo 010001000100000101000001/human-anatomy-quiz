@@ -74,12 +74,11 @@ def new_game():
     score = 0
 
     # Input validation loop
-    while True:
+    for q in questions:
+        print("\n" + q["question"])
+        for option in q["options"]:
+            print(option)
         answer = input("Enter your answer (a, b, c, d):\n").lower()
-        if answer in ['a', 'b', 'c', 'd']:
-            break
-            else:
-                print("Invalid input. Please enter 'a', 'b', 'c', or 'd'.")
 
     if answer == q["answer"]:
         print("Correct!")
