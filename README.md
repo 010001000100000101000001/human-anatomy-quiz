@@ -1,32 +1,29 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Human Anatomy Quiz Game
 
-Welcome,
+## Introduction
+The Human Anatomy Quiz is a simple, interactive Python terminal game designed to test a users knowledge of human anatomy.
+It is aimed at individuals of all ages who are interested in learning about the human body in a fun and engaging way.
+How to Play
+- Answer a series of multiple-choice questions by typing the letter corresponding to your answer (a, b, c, or d), and then press Enter.
+- After each question, the user will receive immediate feedback. If the user gets the answer right, the game will congratulate you. If the user gets it wrong, the game will provide the correct answer.
+- The users score will be tallied as the user progresses through the quiz.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## Deployment Guide
+This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. To achieve this, the following deployment procedure was undertaken:
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Repository Cloning: Initiated the process by cloning the project's repository to ensure a local copy for deployment preparation.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+Heroku Application: Proceeded by establishing a new application within the Heroku environment, dedicated specifically to this project.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Buildpack Configuration: Configured the necessary buildpacks in a sequential order, starting with Python followed by Node.js, to accommodate the technology stack used in the project.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Environment Variables: Set up an essential configuration variable named PORT and assigned it the value 8000, which aligns with Heroku's required setup for web applications.
 
-Connect your GitHub repository and deploy as normal.
+Repository Integration: Linked the Heroku application to this corresponding GitHub repository to enable direct deployments from the source code.
 
-## Constraints
+Application Deployment: Completed the deployment process by utilizing Heroku's 'Deploy' feature, which facilitated the transition of the project from development to a live environment.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+The application is now live and can be accessed through Heroku's platform, ensuring users can interact with the Human Anatomy Quiz game in a fully functional terminal interface.
