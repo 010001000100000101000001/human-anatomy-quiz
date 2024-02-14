@@ -73,7 +73,6 @@ def new_game():
 
     score = 0
 
-    # Input validation loop
     for q in questions:
         print("\n" + q["question"])
         for option in q["options"]:
@@ -83,7 +82,7 @@ def new_game():
     if answer == q["answer"]:
         print("Correct!")
         score += 1
-        else:
+            else:
             print("Incorrect. The correct answer was " + q["answer"] + ".")
 
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
