@@ -3,7 +3,7 @@ import sys
 import time
 
 
-from colorama import Fore
+import colorama
 
 
 def clear():
