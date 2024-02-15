@@ -4,7 +4,7 @@ import time
 
 
 def clear():
-    os.system('cls' if os.name == 'nt' 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     """
     Clears the terminal screen.
 
