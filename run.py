@@ -1,8 +1,10 @@
 import os
 import sys
-import time
-from colorama import init, Fore
-init(autoreset=True)  # Initializes Colorama and autoresets color after each print statement
+import 
+
+
+from colorama import Fore
+
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -116,7 +118,7 @@ def new_game():
 
         # Evaluate the answer and provide feedback.
         if answer == q["answer"]:
-            print(Fore.GREEN +"Correct!")
+            print(Fore.GREEN + "Correct!")
             score += 1
         else:
             print(Fore.RED + "Incorrect. The correct answer was " + q["answer"] + ".")
