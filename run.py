@@ -115,7 +115,12 @@ def new_game():
         print("\n" + q["question"])
         for option in q["options"]:
             print(option)
-        answer = input("Enter your answer (a, b, c, d):\n").lower()
+        while True:
+            answer = input("Enter your answer (a, b, c, d):\n").lower()
+            if answer not in ["a", "b", "c", "d"]:
+                print(Fore.RED + "Invalid Answer, Try Again!")
+            else:
+                break
 
         # Evaluate the answer and provide feedback.
         if answer == q["answer"]:
