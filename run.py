@@ -119,7 +119,10 @@ def new_game():
             score += 1
         else:
             print("Incorrect. The correct answer was " + q["answer"] + ".")
-            time.sleep(3)
+        
+        # Wait for two seconds
+        
+        input("Press Enter to continue")
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
