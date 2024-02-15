@@ -26,9 +26,6 @@ question: A string containing the question to be asked.
 options: A list of strings, each representing a possible answer. The options are labeled with letters (a, b, c, d) for easy reference.
 answer: A string ('a', 'b', 'c', or 'd') indicating the correct answer to the question.
 
-### Game Flow
-
-To document the data model for the Human Anatomy Quiz game in a README.md file, you'd want to cover the key components that make up the game, including the structure of questions, the game flow, and how user interactions are handled. Below is a suggested breakdown that accurately reflects the code provided:
 
 ### Data Model Description
 The Human Anatomy Quiz game is designed to test the player's knowledge of human anatomy through a series of multiple-choice questions. The game is structured into three main parts: the main menu, the instructions, and the quiz game itself. Below is a detailed breakdown of the data model and components used in the game.
