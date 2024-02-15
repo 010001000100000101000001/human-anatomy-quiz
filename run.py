@@ -3,9 +3,6 @@ import sys
 import time
 
 
-import colorama
-
-
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
     """
@@ -118,10 +115,10 @@ def new_game():
 
         # Evaluate the answer and provide feedback.
         if answer == q["answer"]:
-            print(Fore.GREEN + "Correct!")
+            print("Correct!")
             score += 1
         else:
-            print(Fore.RED + "Incorrect. The correct answer was "
+            print("Incorrect. The correct answer was "
                   + q["answer"] + ".")
 
         # Wait for two seconds
