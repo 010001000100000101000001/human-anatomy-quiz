@@ -1,6 +1,6 @@
 import os
 import sys
-import 
+import time
 
 
 from colorama import Fore
