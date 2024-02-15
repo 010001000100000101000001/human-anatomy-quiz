@@ -12,8 +12,8 @@ def clear():
     terminal screen to keep the display clean.
     Recommended to Matt Boden by Goran Sigeskog
     https://github.com/gorsig
-    Reccommended to me by my mentor Matt Boden
-    """"
+    Reccommended to me by my mentor Matt Boden.
+    """
 
 
 def display_instructions():
