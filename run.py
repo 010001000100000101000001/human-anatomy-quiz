@@ -3,6 +3,7 @@ from google.oauth2.service_account import Credentials
 import os
 import sys
 import time
+import threading
 
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
@@ -215,7 +216,7 @@ def menu():
 
         # Direct the user to the chosen action.
         if choice == "1":
-            new_game(username) # Pass the username as an argument
+            new_game(username)  # Pass the username as an argument
         elif choice == "2":
             display_instructions()
         elif choice == "3":
