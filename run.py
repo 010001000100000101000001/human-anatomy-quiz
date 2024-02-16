@@ -153,6 +153,22 @@ def menu():
     while True:
         clear()
         print("\nWelcome to the Human Anatomy Quiz Game!")
+        username = input("Enter your username:\n").strip()
+
+        # Validate username using string methods
+        if not username:
+            print("Invalid username. Please enter a non-empty username.")
+            input("Press Enter to continue..")
+            continue
+
+        # Check username does not contain invalid characters
+        if not username.isalnum():
+            print("Invalid. Username must contain only letters and numbers.")
+            input("Press Enter to continue..")
+            continue
+
+        print(f"Welcome, {username}!")
+
         print("1. Play Game")
         print("2. Instructions")
         print("3. Quit Game")
