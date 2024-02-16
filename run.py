@@ -163,6 +163,9 @@ def new_game(username):
         print("\n" + q["question"])
         for option in q["options"]:
             print(option)
+        # Start a timer for each question
+        timer_thread = threading.Timer(10.0, print, ['\nTime\'s up!'])
+        timer_thread.start()
         while True:
             answer = input("Enter your answer (a, b, c, d):\n").lower()
             if answer not in ["a", "b", "c", "d"]:
@@ -248,5 +251,6 @@ def get_valid_username():
 username = get_valid_username()
 
 
-# Start the game by calling the menu function with the username
+# Start the game by calling the menu function with the user name
+username = get_valid_username()
 menu()
