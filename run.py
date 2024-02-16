@@ -139,7 +139,7 @@ def new_game():
     """
 
 
-def menu():
+def menu(username):
     """
     Displays the main menu and handles user choices.
     This function presents the main menu of the game, allowing
