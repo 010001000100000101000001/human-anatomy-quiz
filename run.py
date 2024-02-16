@@ -158,6 +158,13 @@ def menu():
         print("3. Quit Game")
 
         choice = input("\nEnter your choice (1-3):\n")
+
+        # Validate user input
+        if choice not in ["1", "2", "3"]:
+            print("Invalid choice. Please enter 1, 2, or 3.")
+            input("Press Enter to continue..")
+            continue
+
         # Direct the user to the chosen action.
         if choice == "1":
             new_game()
