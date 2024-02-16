@@ -127,8 +127,7 @@ def new_game():
             print(Style.BRIGHT + Fore.GREEN + "Correct!" + Style.RESET_ALL)
             score += 1
         else:
-            print(Back.RED + Style.BRIGHT + Fore.WHITE + "Incorrect.
-                  The correct answer was "
+            print(Back.RED + Fore.WHITE + "Incorrect. The correct answer was "
                   + q["answer"] + "." Style.RESET_ALL)
 
         # Wait for two seconds
