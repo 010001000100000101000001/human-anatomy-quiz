@@ -167,18 +167,19 @@ def new_game(username):
         print("\n" + q["question"])
         for option in q["options"]:
             print(option)
+
         # Flag to track if user answered within time limit
         answered_within_time_limit = threading.Event()
+
         # Start a timer for each question
-        timer_thread = threading.Timer(10.0, print, ['\nTime\'s up!'])
+        timer_thread = threading.Timer(10.0, print, answered_within_time_limit_limit,set)
         timer_thread.start()
+
         while True:
             answer = input("Enter your answer (a, b, c, d):\n").lower()
             if answer not in ["a", "b", "c", "d"]:
                 print(Fore.RED + "Invalid Answer, Try Again!")
             else:
-                # Flag indicating that the user has answered within time limit.
-                answered_within_time_limit.set()
                 break
 
         # Evaluate the answer and provide feedback.
@@ -188,8 +189,6 @@ def new_game(username):
         elif answer == q["answer"]:
             print(Style.BRIGHT + Fore.GREEN + "Correct!" + Style.RESET_ALL)
             score += 1
-        # If the user's answer is incorrect
-        # If the user's answer is incorrect
         else:
             print(Back.RED + "Incorrect. The answer is " + q["answer"] + ".")
 
