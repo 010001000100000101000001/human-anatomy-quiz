@@ -172,7 +172,8 @@ def new_game(username):
         answered_within_time_limit = threading.Event()
 
         # Start a timer for each question
-        timer_thread = threading.Timer(10.0, print, answered_within_time_limit_limit,set)
+        timer_thread = threading.Timer(10.0, print,
+                                       answered_within_time_limit_limit, set)
         timer_thread.start()
 
         while True:
