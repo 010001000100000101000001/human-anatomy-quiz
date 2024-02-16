@@ -135,7 +135,7 @@ def new_game():
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
-    input("Press Enter to return to the menu...")
+    input("Press Enter to return to the menu..")
     """
     Displays the final score and returns to the menu
     """
