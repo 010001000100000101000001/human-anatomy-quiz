@@ -70,8 +70,8 @@ def update_scoresheet(username, score):
     # Sort scores by score in descending order
     scores.sort(key=lambda x: x[1], reverse=True)
 
-    # Keep only the top 5 scores
-    top_scores = scores[:5]
+    # Keep only the top 10 scores
+    top_scores = scores[:10]
 
     # Clear the current scoresheet
     scoresheet.clear()
