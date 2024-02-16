@@ -51,7 +51,8 @@ def display_instructions():
           "(a, b, c, or d), then press Enter.")
     print("You have 10 seconds to answer each question.")
     print("Your final score will be displayed at the end of the quiz.")
-    print("After completion, your username and score will be added to the leaderboard.")
+    print("After completion of the Quiz")
+    print("Your username and score will be added to the leaderboard.")
     print("Good luck!\n")
 
     input("Press Enter to continue..")
@@ -166,6 +167,8 @@ def new_game(username):
         print("\n" + q["question"])
         for option in q["options"]:
             print(option)
+        # Flag to track if user answered within time limit
+        answered_within_time_limit = threading.Event()
         # Start a timer for each question
         timer_thread = threading.Timer(10.0, print, ['\nTime\'s up!'])
         timer_thread.start()
@@ -174,12 +177,19 @@ def new_game(username):
             if answer not in ["a", "b", "c", "d"]:
                 print(Fore.RED + "Invalid Answer, Try Again!")
             else:
+                # Flag indicating that the user has answered within time limit.
+                answered_within_time_limit.set()
                 break
 
         # Evaluate the answer and provide feedback.
-        if answer == q["answer"]:
+        if not answered_within_time_limit.is_set():
+            print(Back.RED + "Time's up! The answer is " + q["answer"] + ".")
+        # If the user's answer is correct
+        elif answer == q["answer"]:
             print(Style.BRIGHT + Fore.GREEN + "Correct!" + Style.RESET_ALL)
             score += 1
+        # If the user's answer is incorrect
+        # If the user's answer is incorrect
         else:
             print(Back.RED + "Incorrect. The answer is " + q["answer"] + ".")
 
@@ -187,6 +197,7 @@ def new_game(username):
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
+    print(f"\nYour score will not be updated to the scoresheet.")
     update_scoresheet(username, score)
     input("Press Enter to return to the menu..")
     """
