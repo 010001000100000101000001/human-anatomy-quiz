@@ -169,11 +169,10 @@ def new_game(username):
             print(option)
 
         # Flag to track if user answered within time limit
-        answered_within_time_limit = threading.Event()
+        answered_in_time = threading.Event()
 
         # Start a timer for each question
-        timer_thread = threading.Timer(10.0, print,
-                                       answered_within_time_limit_limit, set)
+        timer_thread = threading.Timer(10.0, answered_in_time.set)
         timer_thread.start()
 
         while True:
