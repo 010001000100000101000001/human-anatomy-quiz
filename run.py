@@ -183,7 +183,7 @@ def new_game(username):
                 break
 
         # Evaluate the answer and provide feedback.
-        if not answered_within_time_limit.is_set():
+        if not answered_in_time.is_set():
             print(Back.RED + "Time's up! The answer is " + q["answer"] + ".")
         # If the user's answer is correct
         elif answer == q["answer"]:
