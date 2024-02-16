@@ -251,6 +251,5 @@ def get_valid_username():
 username = get_valid_username()
 
 
-# Start the game by calling the menu function with the user name
-username = get_valid_username()
+# Start the game by calling the menu function
 menu()
