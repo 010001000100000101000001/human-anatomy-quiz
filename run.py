@@ -187,7 +187,7 @@ def new_game(username):
     """
 
 
-def menu(username):
+def menu():
     """
     Displays the main menu and handles user choices.
     This function presents the main menu of the game, allowing
@@ -195,6 +195,7 @@ def menu(username):
     viewing instructions, or quitting. It processes the user's
     input and directs to the appropriate action.
     """
+
     while True:
         clear()
         print("\nWelcome to the Human Anatomy Quiz Game!")
@@ -214,7 +215,7 @@ def menu(username):
 
         # Direct the user to the chosen action.
         if choice == "1":
-            new_game()
+            new_game(username) # Pass the username as an argument
         elif choice == "2":
             display_instructions()
         elif choice == "3":
