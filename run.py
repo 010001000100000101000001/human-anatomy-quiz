@@ -34,6 +34,8 @@ def display_instructions():
           "(a, b, c, or d), then press Enter.")
     print("Good luck!\n")
 
+    input("Press Enter to continue..")
+
 
 def new_game():
     """
