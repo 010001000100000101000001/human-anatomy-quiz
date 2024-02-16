@@ -49,6 +49,9 @@ def display_instructions():
     print("You will be given a series of questions to test your knowledge.")
     print("Please answer by typing the letter corresponding to your answer",
           "(a, b, c, or d), then press Enter.")
+    print("You have 10 seconds to answer each question.")
+    print("Your final score will be displayed at the end of the quiz.")
+    print("After completion, your username and score will be added to the leaderboard.")
     print("Good luck!\n")
 
     input("Press Enter to continue..")
