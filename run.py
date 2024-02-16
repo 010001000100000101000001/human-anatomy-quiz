@@ -247,4 +247,4 @@ username = get_valid_username()
 
 
 # Start the game by calling the menu function with the username
-menu(username)
+menu()
