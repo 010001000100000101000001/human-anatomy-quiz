@@ -196,7 +196,7 @@ def new_game(username):
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
-    print(f"\nYour score will not be updated to the scoresheet.")
+    print(f"\nYour score will be updated to the scoresheet.")
     update_scoresheet(username, score)
     input("Press Enter to return to the menu..")
     """
