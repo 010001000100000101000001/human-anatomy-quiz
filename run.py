@@ -124,11 +124,12 @@ def new_game():
 
         # Evaluate the answer and provide feedback.
         if answer == q["answer"]:
-            print(Fore.GREEN + "Correct!" + Style.RESET_ALL)
+            print(Style.BRIGHT + Fore.GREEN + "Correct!" + Style.RESET_ALL)
             score += 1
         else:
-            print(Fore.RED + "Incorrect. The correct answer was "
-                  + q["answer"] + ".")
+            print(Back.RED + Style.BRIGHT + Fore.WHITE + "Incorrect.
+                  The correct answer was "
+                  + q["answer"] + "." Style.RESET_ALL)
 
         # Wait for two seconds
 
