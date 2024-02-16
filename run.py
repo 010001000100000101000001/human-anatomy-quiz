@@ -1,10 +1,26 @@
+import gspread
+from google.oauth2.service_account import Credentials
 import os
 import sys
 import time
 
-
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
+
+# Authenticate with Google Sheets API
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('human_anatomy_quiz')
+
+# Access the 'scoresheet' worksheet
+scoresheet = SHEET.worksheet('scoresheet')
 
 
 def clear():
@@ -37,7 +53,36 @@ def display_instructions():
     input("Press Enter to continue..")
 
 
-def new_game():
+def update_scoresheet(username, score):
+    """
+    Updates the scoresheet with the username and score.
+    Keeps only the top 5 scores and deletes the lowest scores if necessary.
+    """
+    # Get existing data from the scoresheet
+    data = scoresheet.get_all_values()
+
+    # Create a list of tuples containing username and score
+    scores = [(row[0], int(row[1])) for row in data[1:]]
+
+    # Add the new score to the list
+    scores.append((username, score))
+
+    # Sort scores by score in descending order
+    scores.sort(key=lambda x: x[1], reverse=True)
+
+    # Keep only the top 5 scores
+    top_scores = scores[:5]
+
+    # Clear the current scoresheet
+    scoresheet.clear()
+
+    # Write the updated scores to the scoresheet
+    scoresheet.append_row(['Username', 'Score'])
+    for username, score in top_scores:
+        scoresheet.append_row([username, score])
+
+
+def new_game(username):
     """
     Start a new game session.
 
@@ -131,10 +176,11 @@ def new_game():
         else:
             print(Back.RED + "Incorrect. The answer is " + q["answer"] + ".")
 
-        input("Press Enter to continue")
+        input("Press Enter to continue..")
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
+    update_scoresheet(username, score)
     input("Press Enter to return to the menu..")
     """
     Displays the final score and returns to the menu
