@@ -75,7 +75,7 @@ Display: At the end of a game session, the user's score is displayed, showing ho
 
 
 ### Google Sheets Integration
-- *Score Tracking**: User scores are stored in a Google Sheets document named "human_anatomy_quiz". Each time a player completes  
+- **Score Tracking**: User scores are stored in a Google Sheets document named "human_anatomy_quiz". Each time a player completes  
    a game session, their username and score are added to the scoresheet.
 - **Leaderboard Display**: The top 10 scores are displayed in the scoresheet, allowing players to see how they compare to others. 
   The scoresheet is updated dynamically as new scores are added.
