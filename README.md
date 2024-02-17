@@ -134,7 +134,7 @@ editor access to the Google Sheets document to enable it to update scores.
 
 
 ## Credits
-The ability to set up Google sheets was taken from the series of videos on the love_sandwiches project. I used tutorials, guides and information from from https://www.codecademy.com/, https://www.freecodecamp.org/, https://www.w3schools.com/, https://pypi.org/ and https://www.youtube.com/.
+The ability to set up Google sheets was taken from the series of videos on the love_sandwiches project. I used tutorials, guides and information from https://www.codecademy.com/, https://www.freecodecamp.org/, https://www.w3schools.com/, https://pypi.org/ and https://www.youtube.com/.
 
 ## Special Thanks
 Thank you to Code Institute and Matt Boden who provided me with the guidance to complete this project.
