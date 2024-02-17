@@ -49,7 +49,7 @@ def display_instructions():
           "(a, b, c, or d), then press Enter.")
     print("Your final score will be displayed at the end of the quiz.")
     print("After completion of the Quiz")
-    print("Your username and score will be added to the leaderboard.")
+    print("Your username and score will be added to the top 10 leaderboard.")
     print("Good luck!\n")
 
     input("Press Enter to continue..")
@@ -58,7 +58,7 @@ def display_instructions():
 def update_scoresheet(username, score):
     """
     Updates the scoresheet with the username and score.
-    Keeps only the top 5 scores and deletes the lowest scores if necessary.
+    Keeps only the top 10 scores and deletes the lowest scores if necessary.
     """
     # Get existing data from the scoresheet
     data = scoresheet.get_all_values()
