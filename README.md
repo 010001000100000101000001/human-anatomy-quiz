@@ -80,7 +80,8 @@ Display: At the end of a game session, the user's score is displayed, showing ho
 - **Leaderboard Display**: The top 10 scores are displayed in the scoresheet, allowing players to see how they compare to others. 
   The scoresheet is updated dynamically as new scores are added.
 
-  ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/6160d65d-3d1e-464d-81e9-0c42e4de1477)
+  ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/9252415b-0f88-4877-bb8f-9bdbfba7f35d)
+
 
 
 ###  Feedback to the User
