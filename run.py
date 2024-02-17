@@ -2,8 +2,6 @@ import gspread
 from google.oauth2.service_account import Credentials
 import os
 import sys
-import time
-import threading
 
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
@@ -49,7 +47,6 @@ def display_instructions():
     print("You will be given a series of questions to test your knowledge.")
     print("Please answer by typing the letter corresponding to your answer",
           "(a, b, c, or d), then press Enter.")
-    print("You have 10 seconds to answer each question.")
     print("Your final score will be displayed at the end of the quiz.")
     print("After completion of the Quiz")
     print("Your username and score will be added to the leaderboard.")
@@ -168,13 +165,6 @@ def new_game(username):
         for option in q["options"]:
             print(option)
 
-        # Flag to track if user answered within time limit
-        answered_in_time = threading.Event()
-
-        # Start a timer for each question
-        timer_thread = threading.Timer(10.0, answered_in_time.set)
-        timer_thread.start()
-
         while True:
             answer = input("Enter your answer (a, b, c, d):\n").lower()
             if answer not in ["a", "b", "c", "d"]:
@@ -183,15 +173,11 @@ def new_game(username):
                 break
 
         # Evaluate the answer and provide feedback.
-        if not answered_in_time.is_set():
-            print(Back.RED + "Time's up! The answer is " + q["answer"] + ".")
-        # If the user's answer is correct
-        elif answer == q["answer"]:
+        if answer == q["answer"]:
             print(Style.BRIGHT + Fore.GREEN + "Correct!" + Style.RESET_ALL)
             score += 1
         else:
             print(Back.RED + "Incorrect. The answer is " + q["answer"] + ".")
-
         input("Press Enter to continue..")
 
     clear()
