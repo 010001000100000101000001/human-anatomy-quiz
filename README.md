@@ -17,12 +17,24 @@ It is aimed at individuals of all ages who are interested in learning about the 
 ### Start
 The program starts with an infinite loop which will continue until a valid username is entered by the user. Prompting the user with the input function: "Enter your username:" The  .strip() method is used to remove any leading or trailing whitespace from the input. This ensures that usernames with unintentional spaces are handled properly. The code checks if the entered username is empty and gives feedback to the user:  "Invalid username. Please enter a non-empty username." The input("Press Enter to continue..") is used to pause the execution until the user presses enter giving the user time to respond. The isalnum() method checks if the user inputs other than alphanumeric characters and if it is, it prints an error message "Invalid. Username must contain only letters and numbers." If the entered username is valid, the function exits the loop and returns the valid username with a welcome message and the Menu.
 
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/8260fab2-b0d3-45f9-a863-92ccbb8aef94)
+
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/a7d36c15-dd91-4dcc-abf9-72877aed74ed)
+
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/6c46d750-f184-48fc-ac3a-2c76a3d8c780)
+
 
 ### Welcome message 
 The player is greeted with a welcome message and a Menu with a list of options.
 
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/3f1f8d9a-2de6-4919-9f61-21f2e8c05727)
+
+
 ### Input validation
 - Players' responses to quiz questions are validated to ensure they select from the provided multiple-choice options (a, b, c, or d).
+
+  ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/d1c58b89-ccc4-4523-8558-5fbdf56a62e4)
+
 
 ### Components
 Structure: Each question is represented as a dictionary containing the question text, a list of options, and the correct answer identifier.
@@ -59,19 +71,35 @@ At the end of the quiz, the user's total score out of the number of questions is
 Calculation: The score is calculated by incrementing a counter each time the user selects the correct answer.
 Display: At the end of a game session, the user's score is displayed, showing how many questions were answered correctly out of the total number of questions.
 
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/6ff48f84-09ef-4d03-957c-11d370370a2d)
+
+
 ### Google Sheets Integration
 - *Score Tracking**: User scores are stored in a Google Sheets document named "human_anatomy_quiz". Each time a player completes  
    a game session, their username and score are added to the scoresheet.
 - **Leaderboard Display**: The top 10 scores are displayed in the scoresheet, allowing players to see how they compare to others. 
   The scoresheet is updated dynamically as new scores are added.
 
+  ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/6160d65d-3d1e-464d-81e9-0c42e4de1477)
+
+
 ###  Feedback to the User
 Upon answering a question, players receive immediate feedback:
 - A correct answer results in a congratulatory message which is in green text achieved by importing colorama module and applying the necessary changes to the code.
+
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/5240f0ef-0f28-402a-8015-9144b44e5ccb)
+
+  
 - An incorrect answer lets the user know it was incorrect and provides them with the correct answer helping to educate them. This is in red text indicationg that the answer was wrong also achieved using the imported colorama module.
+
+  ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c6804e48-5561-45cb-8e5e-85eb86226142)
+
 
 ### End of Game
 Completing the quiz presents the user with a Game Over message followed by their score.
+
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/4f2b2a98-45e2-4e00-a710-cf40924addc2)
+
 
 ### Future Features
 - **Expand the Number of Questions**: Introduce a larger pool of questions to keep the game challenging and engaging for players.
