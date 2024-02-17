@@ -109,17 +109,17 @@ Completing the quiz presents the user with a Game Over message followed by their
 ## Deployment Guide
 This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. To achieve this, the following deployment procedure was undertaken:
 
-Repository Cloning: Initiated the process by cloning the project's repository to ensure a local copy for deployment preparation.
+**Repository Cloning**: Initiated the process by cloning the project's repository to ensure a local copy for deployment preparation.
 
-Heroku Application: Proceeded by establishing a new application within the Heroku environment, dedicated specifically to this project.
+**Heroku Application**: Proceeded by establishing a new application within the Heroku environment, dedicated specifically to this project.
 
-Buildpack Configuration: Configured the necessary buildpacks in a sequential order, starting with Python followed by Node.js, to accommodate the technology stack used in the project.
+**Buildpack Configuration**: Configured the necessary buildpacks in a sequential order, starting with Python followed by Node.js, to accommodate the technology stack used in the project.
 
-Environment Variables: Set up an essential configuration variable named PORT and assigned it the value 8000, which aligns with Heroku's required setup for web applications. Set up Google Sheets API credentials, to enable interaction with the Google Sheets document for score tracking.
+**Environment Variables**: Set up an essential configuration variable named PORT and assigned it the value 8000, which aligns with Heroku's required setup for web applications. Set up Google Sheets API credentials, to enable interaction with the Google Sheets document for score tracking.
 
-Repository Integration: Linked the Heroku application to this corresponding GitHub repository to enable direct deployments from the source code.
+**Repository Integration**: Linked the Heroku application to this corresponding GitHub repository to enable direct deployments from the source code.
 
-Application Deployment: Completed the deployment process by utilizing Heroku's 'Deploy' feature, which facilitated the transition of the project from development to a live environment.
+**Application Deployment**: Completed the deployment process by utilizing Heroku's 'Deploy' feature, which facilitated the transition of the project from development to a live environment.
 
 The application is now live and can be accessed through Heroku's platform, ensuring users can interact with the Human Anatomy Quiz game in a fully functional terminal interface.
 
