@@ -122,7 +122,7 @@ Completing the quiz presents the user with a Game Over message followed by their
 
 ### User Interface Testing
 |  Description | Expected Outcome | Actual Outcome | Result |
-|--------------|-------------|------------------|----------------|--------|
+|--------------------|------------------|----------------|--------|
 | Main menu display | Main menu options are displayed correctly | As expected | Pass |
 | Clear screen | Terminal screen is cleared before displaying new content | As expected | Pass |
 | Color formatting | Text is displayed with appropriate colors for emphasis | As expected | Pass |
