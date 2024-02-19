@@ -107,6 +107,18 @@ Completing the quiz presents the user with a Game Over message followed by their
 - **Timer**: Introduce a timer that marks the question as incorrect if the user does not answer in 10 seconds.
 
 
+## Testing
+
+### Functional Testing
+| Description          | Expected Outcome                                  | Actual Outcome | Result |
+|----------------------|---------------------------------------------------|----------------|--------|
+| Display instructions | Instructions are displayed properly                | As expected    | Pass   |
+| Answer questions     | Questions are presented, and user's answers are evaluated | As expected | Pass   |
+| Display final score  | Final score is displayed at the end of the game  | As expected    | Pass   |
+| Update scoresheet    | Scores are updated in the Google Sheets document | As expected    | Pass   |
+| Quit Game    | Program stops running when the user chooses to quit | As expected    | Pass   |
+
+
 ## Deployment Guide
 This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. To achieve this, the following deployment procedure was undertaken:
 
