@@ -120,6 +120,26 @@ Completing the quiz presents the user with a Game Over message followed by their
 | Update scoresheet    | Scores are updated in the Google Sheets document    | As expected    | Pass   |
 | Quit Game    | Program stops running when the user chooses to quit    | As expected    | Pass   |
 
+### User Interface Testing
+|  Description | Expected Outcome | Actual Outcome | Result |
+|--------------|-------------|------------------|----------------|--------|
+| Main menu display | Main menu options are displayed correctly | As expected | Pass |
+| Clear screen | Terminal screen is cleared before displaying new content | As expected | Pass |
+| Color formatting | Text is displayed with appropriate colors for emphasis | As expected | Pass |
+| Input validation | User input is validated | As expected | Pass |
+
+### Integration Testing
+| Description | Expected Outcome | Actual Outcome | Result |
+|-----------------|------------------|----------------|--------|
+| Google Sheets integration | Scores are successfully written to and read from Google Sheets | As expected | Pass |
+| Authentication | Authentication with Google API succeeds | As expected | Pass |
+
+### Usability Testing
+| Description | Expected Outcome | Actual Outcome | Result |
+|-----------------|------------------|----------------|--------|
+| User-friendliness | Game is easy to understand and navigate | As expected | Pass |
+| Clarity of instructions | Instructions are clear and concise | As expected | Pass |
+| Gameplay flow | Game proceeds smoothly without interruptions | As expected | Pass |
 
 ## Deployment Guide
 This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. To achieve this, the following deployment procedure was undertaken:
