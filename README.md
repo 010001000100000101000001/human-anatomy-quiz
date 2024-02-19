@@ -112,11 +112,13 @@ Completing the quiz presents the user with a Game Over message followed by their
 ### Functional Testing
 | Description          | Expected Outcome                                  | Actual Outcome | Result |
 |----------------------|---------------------------------------------------|----------------|--------|
-| Display instructions | Instructions are displayed properly                | As expected    | Pass   |
-| Answer questions     | Questions are presented, and user's answers are evaluated | As expected | Pass   |
-| Display final score  | Final score is displayed at the end of the game  | As expected    | Pass   |
-| Update scoresheet    | Scores are updated in the Google Sheets document | As expected    | Pass   |
-| Quit Game    | Program stops running when the user chooses to quit | As expected    | Pass   |
+| Asks user for username to be entered | Validates input and returns Welcome message if validation passes | As expected    | Pass   |
+| Start a new game | Game initialises when user selects "1. Play Game" | As expected    | Pass   |
+| Display instructions | Instructions are displayed properly  | As expected    | Pass   |
+| Answer questions     | Questions are presented, and user's answers are evaluated    | As expected | Pass   |
+| Display final score  | Final score is displayed at the end of the game    | As expected    | Pass   |
+| Update scoresheet    | Scores are updated in the Google Sheets document    | As expected    | Pass   |
+| Quit Game    | Program stops running when the user chooses to quit    | As expected    | Pass   |
 
 
 ## Deployment Guide
