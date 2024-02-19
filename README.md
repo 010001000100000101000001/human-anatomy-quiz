@@ -109,6 +109,7 @@ Completing the quiz presents the user with a Game Over message followed by their
 
 
 ## Testing
+- I tested my code using the Python linter provided by Code Institute, which checks for adherence to the PEP8 standard.
 
 ### Functional Testing
 | Description          | Expected Outcome                                  | Actual Outcome | Result |

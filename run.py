@@ -228,8 +228,20 @@ def menu():
             print("Invalid choice. Please enter 1, 2, or 3.")
 
 
-# Function to validate the username
 def get_valid_username():
+    """
+    Prompts the user to enter a username, validates it,
+    and returns a valid username.
+
+    Returns:
+        str: A valid username entered by the user.
+
+    This function repeatedly prompts the user to enter a
+    username until a non-empty username containing only letters
+    and numbers is provided. It ensures that the
+    username adheres to the specified criteria and returns
+    it once validated.
+    """
     while True:
         username = input("Enter your username:\n").strip()
 
