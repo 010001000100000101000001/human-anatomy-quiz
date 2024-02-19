@@ -3,6 +3,7 @@
 ## Introduction
 The Human Anatomy Quiz is a simple, interactive Python terminal game designed to test a users knowledge of human anatomy. The game is structured into three main parts: the main menu, the instructions, and the quiz game itself.
 It is aimed at individuals of all ages who are interested in learning about the human body in a fun and engaging way. The game can be useful to students learning Human Anatomy who want to test their knowledge.
+[Click here for a live link](https://human-anatomy-quiz-c547bec37202.herokuapp.com/)
 
 
 ### How to Play
@@ -142,7 +143,7 @@ Completing the quiz presents the user with a Game Over message followed by their
 | Gameplay flow | Game proceeds smoothly without interruptions | As expected | Pass |
 
 ## Deployment Guide
-This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. To achieve this, the following deployment procedure was undertaken:
+This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. This is a link to my  To achieve this, the following deployment procedure was undertaken:
 
 **Repository Cloning**: Initiated the process by cloning the project's repository to ensure a local copy for deployment preparation.
 
