@@ -58,31 +58,25 @@ If the entered username is valid, the function exits the loop and returns the va
 
 
 
-### Components
-Structure: Each question is represented as a dictionary containing the question text, a list of options, and the correct answer identifier.
-Fields:
-question: A string containing the question to be asked.
-options: A list of strings, each representing a possible answer. The options are labeled with letters (a, b, c, d) for easy reference.
-answer: A string ('a', 'b', 'c', or 'd') indicating the correct answer to the question.
-
-
-
 ### Data Model Description
 The Human Anatomy Quiz game is designed to test the player's knowledge of human anatomy through a series of multiple-choice questions. The game is structured into four main parts: the main menu, the instructions, the leaderboard and the quiz game itself. Below is a detailed breakdown of the data model and components used in the game.
 
-### Components
-1. Questions
-Structure: Each question is represented as a dictionary containing the question text, a list of options, and the correct answer identifier.
-Fields:
-question: A string containing the question to be asked.
-options: A list of strings, each representing a possible answer. The options are labeled with letters (a, b, c, d) for easy reference.
-answer: A string ('a', 'b', 'c', or 'd') indicating the correct answer to the question.
-2. Game Flow
-The game flow is managed through a series of functions:
 
-display_instructions(): Prints the game instructions to the console.
-new_game(): Initiates a new game session, looping through the questions, collecting user responses, and scoring the game.
-menu(): Displays the main menu and handles user input to navigate between playing the game, viewing instructions, or quitting.
+**The game flow is managed through a series of functions:**
+- clear(): Clears the terminal screen using system calls.
+- display_instructions(): Prints out the instructions for playing the quiz.
+- update_scoresheet(username, score): Updates the scoresheet with the provided username and score, keeping only the top 10 scores.
+- new_game(username): Initiates a new game session by presenting a series of questions, evaluating user responses, and updating the score.
+- menu(): Displays the main menu allowing the user to start a new game, view instructions, check the leaderboard, or quit the game.
+- get_valid_username(): Prompts the user to enter a valid username, ensuring it's non-empty, alphanumeric, and within a 20 character length limit.
+- display_leaderboard(): Displays the top 10 scores from the scoresheet.
+
+
+### Components
+Each question is represented as a dictionary containing the question text, a list of options, and the correct answer identifier.
+A string containing the question to be asked.
+A list of strings, each representing a possible answer. The options are labeled with letters (a, b, c, d) for easy reference.
+A string ('a', 'b', 'c', or 'd') indicating the correct answer to the question.
 
 ### Game Logic
 The game logic is encapsulated within the new_game() function, which iterates over the list of questions, displays each question with its options, and prompts the user for an answer.
@@ -135,7 +129,7 @@ This process ensures that the leaderboard reflects the top scoring players, with
 
 
 ## Testing
-- I tested my code using the Python linter provided by Code Institute, which checks for adherence to the PEP8 standard.
+**- I tested my code using the Python linter provided by Code Institute, which checks for adherence to the PEP8 standard.**
 
 | Description          | Expected Outcome                                                                 | Result                |
 |----------------------|----------------------------------------------------------------------------------|-----------------------|
