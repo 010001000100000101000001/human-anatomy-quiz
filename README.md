@@ -68,7 +68,7 @@ answer: A string ('a', 'b', 'c', or 'd') indicating the correct answer to the qu
 
 
 ### Data Model Description
-The Human Anatomy Quiz game is designed to test the player's knowledge of human anatomy through a series of multiple-choice questions. The game is structured into three main parts: the main menu, the instructions, and the quiz game itself. Below is a detailed breakdown of the data model and components used in the game.
+The Human Anatomy Quiz game is designed to test the player's knowledge of human anatomy through a series of multiple-choice questions. The game is structured into four main parts: the main menu, the instructions, the leaderboard and the quiz game itself. Below is a detailed breakdown of the data model and components used in the game.
 
 ### Components
 1. Questions
@@ -108,12 +108,12 @@ Display: At the end of a game session, the user's score is displayed, showing ho
 
 ###  Feedback to the User
 Upon answering a question, players receive immediate feedback:
-- A correct answer results in a congratulatory message which is in green text achieved by importing colorama module and applying the necessary changes to the code.
+- A correct answer results in a print statement that reads "Correct!" which is in bright green text that indicates to the user they choose the correct answer. This is achieved by importing the colorama module and applying the necessary changes to the code.
 
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/5240f0ef-0f28-402a-8015-9144b44e5ccb)
 
   
-- An incorrect answer lets the user know it was incorrect and provides them with the correct answer helping to educate them. This is in red text indicationg that the answer was wrong also achieved using the imported colorama module.
+- An incorrect answer lets the user know it was incorrect and provides them with the correct answer helping to educate them. This is white text with a red background indicating that the answer was wrong also achieved using the imported colorama module. This was orginally in red text with a black background but the visibility of the text did not come across very clearly.
 
   ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c6804e48-5561-45cb-8e5e-85eb86226142)
 
