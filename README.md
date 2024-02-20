@@ -133,38 +133,30 @@ This process ensures that the leaderboard reflects the top scoring players, with
 ## Testing
 - I tested my code using the Python linter provided by Code Institute, which checks for adherence to the PEP8 standard.
 
-### Functional Testing
-| Description          | Expected Outcome                                  | Actual Outcome | Result |
-|----------------------|---------------------------------------------------|----------------|--------|
-| User input validation | Prompts user to enter a username. If the username is not empty spaces and is within 20 characters and contains only letters and numbers it will return the username with a welcome message.  | As expected    | Pass   |
-| Start a new game | Game initialises when user selects "1. Play Game" | As expected    | Pass   |
-| Display instructions | Instructions are displayed properly  | As expected    | Pass   |
-| Display the leaderboard  | The top 10 scores is displayed on the leaderboard in the format username: (score)    | As expected    | Pass   |
-| Answer questions     | Questions are presented, and user's answers are evaluated    | As expected | Pass   |
-| Display final score  | Final score is displayed at the end of the game    | As expected    | Pass   |
-| Update scoresheet    | Scores are updated in the Google Sheets document    | As expected    | Pass   |
-| Quit Game    | Program stops running when the user chooses to quit    | As expected    | Pass   |
-
-### User Interface Testing
-|  Description | Expected Outcome | Actual Outcome | Result |
-|--------------------|------------------|----------------|--------|
-| Main menu display | Main menu options are displayed correctly | As expected | Pass |
-| Clear screen | Terminal screen is cleared before displaying new content | As expected | Pass |
-| Color formatting | Text is displayed with appropriate colors for emphasis | As expected | Pass |
-| Input validation | User input is validated | As expected | Pass |
+| Description          | Expected Outcome                                                                 | Result                |
+|----------------------|----------------------------------------------------------------------------------|-----------------------|
+| User input validation | Prompts user to enter a username. If the username is not empty spaces and is within 20 characters and contains only letters and numbers it will return the username with a welcome message and the menu with the list of options.  |  Pass   |
+| Incorrect input(1) | If the user inputs empty spaces it is handled by the code and returns a print statement "Invalid. Please enter a non-empty username." The user is prompted to press Enter to continue and the infinite loop repeats untill a valid username is entered. | Pass   |
+| Incorrect input(2) | If the user inputs special characters it is handled by the code and returns a print statement "Invalid. Letters and numbers only." The user is prompted to press Enter to continue and the infinite loop repeats untill a valid username is entered. | Pass   |
+| Incorrect input(3) | If the user inputs more than 20 characters it is handled by the code and returns a print statement "Invalid. Maximum character length is 20." The user is prompted to press Enter to continue and the infinite loop repeats untill a valid username is entered. | Pass   |
+| Play Game | Game initialises when user selects "1. Play Game" the terminal is cleared and the first question is displayed. | Pass   |
+| Display instructions | Instructions are displayed properly. The user can navigate back to the main menu from the instructions section. | Pass   |
+| Display the leaderboard  | The top 10 scores is displayed on the leaderboard in the format "username: (score)" The leaderboard displays the scores in descending order. The leaderboard displays only the top 10 scores. The user can navigate back to the main menu from the leaderboard. |  Pass   |
+| Answer input validation     | Answers are validated from the multiple choice options (a, b, c or d) If any other character, empty space or combination is input it is handled by the code and a print statement is returned. "Invalid answer, Try again!" This repeats an infinite loop until a valid answer is input. | Pass   |
+| Answer questions     | Questions are presented, and user's answers are evaluated    | Pass   |
+| Display final score  | Final score is displayed at the end of the game    | Pass   |
+| Update leaderboard    | Scores are updated in the leaderboard section if the score makes it in the top 10   | Pass   |
+| Quit Game    | Program stops running when the user chooses to quit    | Pass   |
+| Main menu display | Main menu options are displayed correctly | Pass |
+| Clear screen | Terminal screen is cleared before displaying new content |  Pass |
+| Color formatting | Text is displayed with appropriate colors for emphasis | Pass |
 
 ### Integration Testing
-| Description | Expected Outcome | Actual Outcome | Result |
+| Description | Expected Outcome | Result |
 |-----------------|------------------|----------------|--------|
-| Google Sheets integration | Scores are successfully written to and read from Google Sheets | As expected | Pass |
-| Authentication | Authentication with Google API succeeds | As expected | Pass |
+| Google Sheets integration | Scores are successfully written to and read from Google Sheets | Pass |
+| Authentication | Authentication with Google API succeeds | Pass |
 
-### Usability Testing
-| Description | Expected Outcome | Actual Outcome | Result |
-|-----------------|------------------|----------------|--------|
-| User-friendliness | Game is easy to understand and navigate | As expected | Pass |
-| Clarity of instructions | Instructions are clear and concise | As expected | Pass |
-| Gameplay flow | Game proceeds smoothly without interruptions | As expected | Pass |
 
 ## Deployment Guide
 This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. This is a link to my  To achieve this, the following deployment procedure was undertaken:
