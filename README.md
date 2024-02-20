@@ -12,18 +12,26 @@ It is aimed at individuals of all ages who are interested in learning about the 
 - The users score will be tallied as the user progresses through the quiz.
 - After completion of the quiz the score will be updated to a Leaderboard of the top 10 scores.
 
+### Target Users
+- This game is aimed at all individuals but mainly caters to students who are studying human physiology and anatomy. These students often need to test their knowledge as they prepare for exams. The quiz provides a valuable tool for them to assess their understanding of various anatomical concepts and reinforce their learning through interactive gameplay. Many students preparing for exams, whether in high school, college, or medical school, require resources to help them review and practice. This game offers a structured quiz format that covers essential topics in human anatomy, allowing students to assess their strengths and weaknesses in specific areas of study. The game offers a fun and engaging way for students to learn. By presenting questions in a quiz format with multiple-choice answers, it encourages active participation and stimulates memory recall. As students progress through the quiz, they can track their performance and identify areas for improvement, enhancing their overall learning experience. The inclusion of a leaderboard adds a competitive element to the game, motivating students to strive for higher scores and outperform their fellow students. The game's accessibility makes it suitable for a wide range of users, from beginner-level students to those with more advanced knowledge of human anatomy. The clear instructions and intuitive gameplay make it easy for users to dive into the quiz and start testing their knowledge immediately. By allowing users to compete for top scores on the leaderboard, the game promotes a sense of community.
+
 
 ## Existing Features
 
 ### Start
 The program starts with an infinite loop which will continue until a valid username is entered by the user. Prompting the user with the input function: "Enter your username:" 
+
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/1a673d1a-fc18-4385-a130-455b3ec7575b)
 
 
 The  .strip() method is used to remove any leading or trailing whitespace from the input. This ensures that usernames with unintentional spaces are handled properly. The code checks if the entered username is empty and gives feedback to the user:  "Invalid. Please enter a non-empty username." The input("Press Enter to continue..") is used to pause the execution until the user presses enter giving the user time to respond.
+
+
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/3f10e1ad-e31c-4953-a32a-323c61f8a611)
 
 If the length of the username exceeds 20 characters, the user is informed that the username is invalid, and they're prompted to enter a username with a maximum character length of 20.
+
+
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c022cbfd-1140-402c-af4a-975fac11d397)
 
 
@@ -33,6 +41,8 @@ The isalnum() method checks if the user inputs other than alphanumeric character
 
 ### Welcome message 
 If the entered username is valid, the function exits the loop and returns the valid username with a welcome message and the Menu with a list of options.
+
+
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/1391176a-047d-4525-8072-3024bf809079)
 
 
@@ -104,9 +114,14 @@ Upon answering a question, players receive immediate feedback:
 
 
 ### End of Game
-Completing the quiz presents the user with a Game Over message followed by their score.
+At the end of the quiz, the user receives a "Game Over" message along with their final score. Their score is then evaluated to determine if it qualifies for placement on the leaderboard.
 
-![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/4f2b2a98-45e2-4e00-a710-cf40924addc2)
+If the user's score is high enough to enter the top 10 scores, it will be updated on the leaderboard. The script checks if the user's score is higher than the lowest score currently on the leaderboard. If it is, the lowest score is replaced with the user's score. Additionally, if the user's score is higher than all existing scores on the leaderboard, they will claim the number 1 position.
+
+This process ensures that the leaderboard reflects the top scoring players, with the most recent high scores included. Users are informed whether their score has been successfully updated on the leaderboard, motivating them to improve their performance in subsequent attempts.
+
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/e0290e6f-e6eb-429c-9375-3567df974040)
+
 
 
 ### Future Features
@@ -120,9 +135,10 @@ Completing the quiz presents the user with a Game Over message followed by their
 ### Functional Testing
 | Description          | Expected Outcome                                  | Actual Outcome | Result |
 |----------------------|---------------------------------------------------|----------------|--------|
-| Asks user for username to be entered | Validates input and returns Welcome message if validation passes | As expected    | Pass   |
+| User input validation | Prompts user to enter a username. If the username is not empty spaces and is within 20 characters and contains only letters and numbers it will return the username with a welcome message.  | As expected    | Pass   |
 | Start a new game | Game initialises when user selects "1. Play Game" | As expected    | Pass   |
 | Display instructions | Instructions are displayed properly  | As expected    | Pass   |
+| Display the leaderboard  | The top 10 scores is displayed on the leaderboard in the format username: (score)    | As expected    | Pass   |
 | Answer questions     | Questions are presented, and user's answers are evaluated    | As expected | Pass   |
 | Display final score  | Final score is displayed at the end of the game    | As expected    | Pass   |
 | Update scoresheet    | Scores are updated in the Google Sheets document    | As expected    | Pass   |
@@ -175,6 +191,9 @@ documents and manage files on Google Drive.
 3. **Permissions Setup**: The service account "humananatomyquiz@human-anatomy-quiz-414515.iam.gserviceaccount.com" was granted 
 editor access to the Google Sheets document to enable it to update scores.
 
+
+## How to fork this Repository
+Click on the "Fork" button at the top right of the page and wait for a couple of seconds for the newly forked repository to be created under your GitHub account.
 
 ## Credits
 The ability to set up Google sheets was taken from the series of videos on the love_sandwiches project. I used tutorials, guides and information from https://www.codecademy.com/, https://www.freecodecamp.org/, https://www.w3schools.com/, https://pypi.org/ and https://www.youtube.com/.
