@@ -119,7 +119,7 @@ At the end of the quiz, the user receives a "Game Over" message along with their
 
 If the user's score is high enough to enter the top 10 scores, it will be updated on the leaderboard. The script checks if the user's score is higher than the lowest score currently on the leaderboard. If it is, the lowest score is replaced with the user's score. Additionally, if the user's score is higher than all existing scores on the leaderboard, they will claim the number 1 position.
 
-This process ensures that the leaderboard reflects the top scoring players, with the most recent high scores included. Users are informed whether their score has been successfully updated on the leaderboard, motivating them to improve their performance in subsequent attempts.
+This process ensures that the leaderboard reflects the top scoring players, with the most recent high scores included.
 
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/e0290e6f-e6eb-429c-9375-3567df974040)
 
