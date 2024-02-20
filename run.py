@@ -206,13 +206,14 @@ def menu():
 
         print("1. Play Game")
         print("2. Instructions")
-        print("3. Quit Game")
+        print("3. Leaderboard")
+        print("4. Quit Game")
 
-        choice = input("\nEnter your choice (1-3):\n")
+        choice = input("\nEnter your choice (1-4):\n")
 
         # Validate user input
-        if choice not in ["1", "2", "3"]:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+        if choice not in ["1", "2", "3", "4"]:
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
             input("Press Enter to continue..")
             continue
 
@@ -222,10 +223,12 @@ def menu():
         elif choice == "2":
             display_instructions()
         elif choice == "3":
+            display_leaderboard()
+        elif choice == "4":
             print("Sorry to see you leave so soon!")
             break
         else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+            print(Back.RED + "Invalid choice. Please enter 1, 2, or 3.")
 
 
 def get_valid_username():
@@ -256,6 +259,19 @@ def get_valid_username():
             continue
 
         return username
+
+
+def display_leaderboard():
+    clear()
+    print("Top 10 Scores:")
+    data = scoresheet.get_all_values()
+    if len(data) > 1:
+        for row in data[1:11]:  # Display top 10 scores
+            print(f"{row[0]}: {row[1]}")
+    else:
+        print("No scores yet.")
+
+    input("Press Enter to return to the menu..")
 
 
 # Get a valid username from the user
