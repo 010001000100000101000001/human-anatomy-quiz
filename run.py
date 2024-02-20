@@ -168,7 +168,7 @@ def new_game(username):
         while True:
             answer = input("Enter your answer (a, b, c, d):\n").lower()
             if answer not in ["a", "b", "c", "d"]:
-                print(Fore.RED + "Invalid Answer, Try Again!")
+                print(Back.RED + "Invalid Answer, Try Again!")
             else:
                 break
 
@@ -249,12 +249,17 @@ def get_valid_username():
         username = input("Enter your username:\n").strip()
 
         if not username:
-            print("Invalid username. Please enter a non-empty username.")
+            print(Back.RED + "Invalid. Please enter a non-empty username.")
+            input("Press Enter to continue..")
+            continue
+
+        if len(username) > 20:
+            print(Back.RED + "Invalid. Maximum character length is 20.")
             input("Press Enter to continue..")
             continue
 
         if not username.isalnum():
-            print("Invalid. Username must contain only letters and numbers.")
+            print(Back.RED + "Invalid. Letters and numbers only.")
             input("Press Enter to continue..")
             continue
 
