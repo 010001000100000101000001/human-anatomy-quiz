@@ -142,7 +142,7 @@ This process ensures that the leaderboard reflects the top scoring players, with
 | Play Game | Game initialises when user selects "1. Play Game" the terminal is cleared and the first question is displayed. | Pass   |
 | Display instructions | Instructions are displayed properly. The user can navigate back to the main menu from the instructions section. | Pass   |
 | Display the leaderboard  | The top 10 scores is displayed on the leaderboard in the format "username: (score)" The leaderboard displays the scores in descending order. The leaderboard displays only the top 10 scores. The user can navigate back to the main menu from the leaderboard. |  Pass   |
-| Answer input validation     | Answers are validated from the multiple choice options (a, b, c or d) If any other character, empty space or combination is input it is handled by the code and a print statement is returned. "Invalid answer, Try again!" This repeats an infinite loop until a valid answer is input. | Pass   |
+| Answer input validation     | Answers are validated from the multiple choice options (a, b, c or d). If any other character, empty space or combination is input it is handled by the code and a print statement is returned. "Invalid answer, Try again!" This repeats an infinite loop until a valid answer is input. | Pass   |
 | Answer questions     | Questions are presented, and user's answers are evaluated    | Pass   |
 | Display final score  | Final score is displayed at the end of the game    | Pass   |
 | Update leaderboard    | Scores are updated in the leaderboard section if the score makes it in the top 10   | Pass   |
@@ -153,7 +153,7 @@ This process ensures that the leaderboard reflects the top scoring players, with
 
 ### Integration Testing
 | Description | Expected Outcome | Result |
-|-----------------|------------------|----------------|--------|
+|-------------|------------------|-------|
 | Google Sheets integration | Scores are successfully written to and read from Google Sheets | Pass |
 | Authentication | Authentication with Google API succeeds | Pass |
 
