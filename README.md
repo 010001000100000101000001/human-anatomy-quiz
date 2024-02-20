@@ -16,19 +16,25 @@ It is aimed at individuals of all ages who are interested in learning about the 
 ## Existing Features
 
 ### Start
-The program starts with an infinite loop which will continue until a valid username is entered by the user. Prompting the user with the input function: "Enter your username:" The  .strip() method is used to remove any leading or trailing whitespace from the input. This ensures that usernames with unintentional spaces are handled properly. The code checks if the entered username is empty and gives feedback to the user:  "Invalid username. Please enter a non-empty username." The input("Press Enter to continue..") is used to pause the execution until the user presses enter giving the user time to respond. The isalnum() method checks if the user inputs other than alphanumeric characters and if it is, it prints an error message "Invalid. Username must contain only letters and numbers." If the entered username is valid, the function exits the loop and returns the valid username with a welcome message and the Menu.
+The program starts with an infinite loop which will continue until a valid username is entered by the user. Prompting the user with the input function: "Enter your username:" 
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/1a673d1a-fc18-4385-a130-455b3ec7575b)
 
-![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/8260fab2-b0d3-45f9-a863-92ccbb8aef94)
 
-![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/a7d36c15-dd91-4dcc-abf9-72877aed74ed)
+The  .strip() method is used to remove any leading or trailing whitespace from the input. This ensures that usernames with unintentional spaces are handled properly. The code checks if the entered username is empty and gives feedback to the user:  "Invalid. Please enter a non-empty username." The input("Press Enter to continue..") is used to pause the execution until the user presses enter giving the user time to respond.
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/3f10e1ad-e31c-4953-a32a-323c61f8a611)
 
-![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/6c46d750-f184-48fc-ac3a-2c76a3d8c780)
+If the length of the username exceeds 20 characters, the user is informed that the username is invalid, and they're prompted to enter a username with a maximum character length of 20.
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c022cbfd-1140-402c-af4a-975fac11d397)
+
+
+The isalnum() method checks if the user inputs other than alphanumeric characters and if it is, it prints an error message "Invalid. Letters and numbers only."
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c5122094-aec2-4f65-b894-689de996bde7)
 
 
 ### Welcome message 
-The player is greeted with a welcome message and a Menu with a list of options.
+If the entered username is valid, the function exits the loop and returns the valid username with a welcome message and the Menu with a list of options.
+![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/1391176a-047d-4525-8072-3024bf809079)
 
-![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/3f1f8d9a-2de6-4919-9f61-21f2e8c05727)
 
 
 ### Input validation
