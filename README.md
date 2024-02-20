@@ -37,7 +37,7 @@ If the length of the username exceeds 20 characters, the user is informed that t
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c022cbfd-1140-402c-af4a-975fac11d397)
 
 
-The isalnum() method checks if the user inputs other than alphanumeric characters and if it is, it prints an error message "Invalid. Letters and numbers only."
+The isalnum() method checks if the user inputs other than alphanumeric characters and if it is, it prints an error message:
 
 
 ![image](https://github.com/010001000100000101000001/human-anatomy-quiz/assets/147556282/c5122094-aec2-4f65-b894-689de996bde7)
