@@ -228,7 +228,7 @@ def menu():
             print("Sorry to see you leave so soon!")
             break
         else:
-            print(Back.RED + "Invalid choice. Please enter 1, 2, or 3.")
+            print(Back.RED + "Invalid choice. Please enter 1, 2, 3 or 4.")
 
 
 def get_valid_username():
