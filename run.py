@@ -49,7 +49,7 @@ def display_instructions():
           "(a, b, c, or d), then press Enter.")
     print("Your final score will be displayed at the end of the quiz.")
     print("After completion of the Quiz")
-    print("Your username and score will be added to the top 10 leaderboard.")
+    print("Your username and score will be added to the top 10 leaderboard if you rank among the top 10.")
     print("Good luck!\n")
 
     input("Press Enter to continue..")
@@ -182,7 +182,7 @@ def new_game(username):
 
     clear()
     print(f"\nGame Over! Your score was {score}/{len(questions)}")
-    print(f"\nYour score will be updated to the Leaderboard.")
+    print(f"\nYour score will be updated to the leaderboard if you rank among the top 10.")
     update_scoresheet(username, score)
     input("Press Enter to return to the menu..")
     """
