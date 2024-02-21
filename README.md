@@ -185,7 +185,7 @@ documents and manage files on Google Drive.
 editor access to the Google Sheets document to enable it to update scores.
 
 
-## How to fork this Repository
+## How to fork this repository
 Click on the "Fork" button at the top right of the page and wait for a couple of seconds for the newly forked repository to be created under your GitHub account.
 
 ## Credits
