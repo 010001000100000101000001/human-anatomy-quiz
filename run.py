@@ -47,7 +47,6 @@ def display_instructions():
     print("Please answer by typing the letter corresponding to your answer",
           "(a, b, c, or d), then press Enter.")
     print("Your final score will be displayed at the end of the quiz.")
-    print("After completion of the Quiz")
     print("After completion, if you rank in the top 10,")
     print("your username and score will be added to the leaderboard.")
     print("Good luck!\n")
