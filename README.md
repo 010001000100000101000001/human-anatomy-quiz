@@ -1,14 +1,14 @@
 # Human Anatomy Quiz Game
 
 ## Introduction
-The Human Anatomy Quiz is a simple, interactive Python terminal game designed to test a users knowledge of human anatomy. The game is structured into three main parts: the main menu, the instructions, and the quiz game itself.
-It is aimed at individuals of all ages who are interested in learning about the human body in a fun and engaging way. The game can be particularly useful to students learning human anatomy who want to test their knowledge or prepare for exams and have a fun and engaging experience.
-[Click here for a live link](https://human-anatomy-quiz-c547bec37202.herokuapp.com/)
+The Human Anatomy Quiz is a simple, interactive Python terminal game designed to test a user's knowledge of human anatomy. The game is structured into four main parts: the main menu, the instructions, the top 10 leaderboard and the quiz game itself.
+It is aimed at individuals of all ages who are interested in learning about human anatomy in a fun and engaging way. The game can be particularly useful to students learning human anatomy who want to test their knowledge or prepare for exams and have a fun and engaging experience.
+[Click here for a live link of the quiz](https://human-anatomy-quiz-c547bec37202.herokuapp.com/)
 
 
 ### How to Play
 - Answer a series of multiple-choice questions by typing the letter corresponding to your answer (a, b, c, or d), and then press Enter.
-- After each question, the user will receive immediate feedback. If the user gets the answer right, the game will congratulate you. If the user gets it wrong, the game will provide the correct answer.
+- After each question, the user will receive immediate feedback. If the player gets the answer right, the game will give feedback that you are correct. If the player gets the answer wrong, the game will provide feedback to the player that the answer was incorrect and then provide you with the correct answer.
 - The users score will be tallied as the user progresses through the quiz.
 - After completion of the quiz the score will be updated to a Leaderboard of the top 10 scores.
 
@@ -126,6 +126,8 @@ This process ensures that the leaderboard reflects the top scoring players, with
 ### Future Features
 - **Expand the Number of Questions**: Introduce a larger pool of questions to keep the game challenging and engaging for players.
 - **Timer**: Introduce a timer that marks the question as incorrect if the user does not answer in 10 seconds.
+- **ASCII Art**: Add some fun ASCII Art to make the quiz more appealing.
+- **Terminal-Based UI Libraries**: Import libraries like "curses or "blessed" to enhance the user experience.
 
 
 ## Testing
@@ -171,7 +173,7 @@ This project has been successfully deployed through the Heroku platform, utilizi
 
 **Application Deployment**: Completed the deployment process by utilizing Heroku's 'Deploy' feature, which facilitated the transition of the project from development to a live environment.
 
-The application is now live and can be accessed through Heroku's platform, ensuring users can interact with the Human Anatomy Quiz game in a fully functional terminal interface.
+The application is now live and can be accessed on https://human-anatomy-quiz-c547bec37202.herokuapp.com/
 
 ## Google Cloud Platform Setup
 To enable the integration with Google Sheets API, the following steps were taken on the Google Cloud Platform:
@@ -189,5 +191,6 @@ Click on the "Fork" button at the top right of the page and wait for a couple of
 ## Credits
 The ability to set up Google sheets was taken from the series of videos on the love_sandwiches project. I used tutorials, guides and information from https://www.codecademy.com/, https://www.freecodecamp.org/, https://www.w3schools.com/, https://pypi.org/ and https://www.youtube.com/.
 
-## Special Thanks
+## Acknowledgements
+**Special Thanks:**
 Thank you to Code Institute and Matt Boden who provided me with the guidance to complete this project.
