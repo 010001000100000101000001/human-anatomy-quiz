@@ -183,7 +183,7 @@ def new_game(username):
     clear()
     print(f"\nGame Over {username}! your score was {score}/{len(questions)}")
     print(f"\nYour score will be updated to the leaderboard.")
-    print(f"\nCongratulations, {username} if you rank in the top 10.")
+    print(f"\nCongratulations {username}, if you rank in the top 10.")
     print(f"\nPlease try again if you are not listed on the leaderboard.")
     update_scoresheet(username, score)
     input("Press Enter to return to the menu..")
