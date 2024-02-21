@@ -10,7 +10,7 @@ It is aimed at individuals of all ages who are interested in learning about huma
 - Answer a series of multiple-choice questions by typing the letter corresponding to your answer (a, b, c, or d), and then press Enter.
 - After each question, the user will receive immediate feedback. If the player gets the answer right, the game will give feedback that you are correct. If the player gets the answer wrong, the game will provide feedback to the player that the answer was incorrect and then provide you with the correct answer.
 - The users score will be tallied as the user progresses through the quiz.
-- After completion of the quiz the score will be updated to a Leaderboard of the top 10 scores.
+- After completion of the quiz the score will be updated to a leaderboard of the top 10 scores.
 
 ### Target Users
 This game is aimed at all individuals but mainly caters to students who are studying human physiology and anatomy. These students often need to test their knowledge as they prepare for exams. The quiz provides a valuable tool for them to assess their knowledge of anatomy and reinforce their learning through interactive gameplay. Many students preparing for exams, require resources to help them review and practice. This game offers a structured quiz format that covers essential topics in human anatomy, allowing students to assess their strengths and weaknesses in specific areas of study.
@@ -154,14 +154,14 @@ This process ensures that the leaderboard reflects the top scoring players, with
 ### Integration Testing
 | Description | Expected Outcome | Result |
 |-------------|------------------|-------|
-| Google Sheets integration | Scores are successfully written to and read from Google Sheets | Pass |
+| Google Sheets integration | The program successfully writes and reads scores from Google Sheets | Pass |
 | Authentication | Authentication with Google API succeeds | Pass |
 
 
 ## Deployment Guide
 This project has been successfully deployed through the Heroku platform, utilizing the Code Institute's Heroku mock terminal. This is a link to my  To achieve this, the following deployment procedure was undertaken:
 
-**Repository Cloning**: Initiated the process by cloning the project's repository to ensure a local copy for deployment preparation.
+**Repository Cloning**: Initiated the process by cloning the project's repository to ensure a local copy for preparing deployment.
 
 **Heroku Application**: Proceeded by establishing a new application within the Heroku environment, dedicated specifically to this project.
 
